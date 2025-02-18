@@ -1,0 +1,82 @@
+{
+    "experience": [
+        {
+            "jobTitle": "Kundtjänstmedarbetare",
+            "employer": "Teleperformance",
+            "dates": "Okt 2020-Jul 2022",
+            "description": "Ta emot frågor på Norska, Engelska och Svenska och lösa kundens problem i betalnings- och fakturafrågor via telefon och mejl. Utvärderade Klarnas nya funktioner i användargränssnittet för medarbetarna och lade fram nya förslag i den interna idéportalen."
+        },
+        {
+            "jobTitle": "Biografmedarbetare",
+            "employer": "Filmstaden Sergel",
+            "dates": "Okt 2018-Jul 2020",
+            "description": "Hantera kassa och presentera filmer. Fokus på kundupplevelsen, problemlösning och samarbete. Utvecklat bättre gästbemötande, ledarskap och ansvarstagande."
+        },
+        {
+            "jobTitle": "Butikssäljare",
+            "employer": "Pocket Shop",
+            "dates": "Nov 2018-Aug 2019",
+            "description": "Hantera kassa och aktiv försäljning av böcker. Fokus på försäljning, kundbemötande och eget initiativ. Självständigt ansvar för butik och arbetsuppgifter."
+        }
+    ],
+    "education": [
+        {
+        "title": "Skådespelarkurs",
+        "school": "Sundsgårdens Folkhögskola",
+        "dates": "Aug 2022-Jun 2023",
+        "description": "Högskoleförberedande teaterutbildning där jag bland annat skapade en kortfilm, var huvudrollsinnehavare i vår slutproduktion samt skrev dramatik och poesi."
+        },
+        {
+        "title": "Drama & English",
+        "school": "Braheskolan och Loxdale English Centre",
+        "dates": "Jan 2022-Jun 2022",
+        "description": "Ett kvartal av studier på folkhögskola i teater och Engelska på vackra Visingsö samt kvartalet efter med studier i främst Engelska."
+        },
+        {
+        "title": "Praktisk Retorik",
+        "school": "Stockholms Universitet",
+        "dates": "Jan 2020-Mar 2020",
+        "description": "Studier i praktisk retorik för att utveckla kommunikativa färdigheter."
+        }
+    ],
+    "skills": [
+        {
+            "skill": "Årets Nykomling",
+            "category": "Filmstaden Sergel",
+            "year": "2019",
+            "description": "Utöver att ha arbetat med kassa och kundservice, fick jag priset för Årets Nykomling på Filmstaden Sergel."
+        },
+        {
+            "skill": "Kolonial & kassa",
+            "category": "Icaskolan",
+            "year": "2017",
+            "description": "Arbetade i butik som kolonialpersonal och kassapersonal, vilket gav mig värdefulla erfarenheter inom detaljhandel."
+        },
+        {
+            "skill": "Examenstalare",
+            "category": "Värmdö gymnasium",
+            "year": "2017",
+            "description": "Vald som examenstalare för min gymnasieklass. Förberedde och höll tal under examen. 2:a plats av 13 klasser."
+        }
+    ], 
+    "languages": [
+        {
+            "title": "Svenska",
+            "description": "Modersmål, talar och förstår detta språk flytande i alla sammanhang."
+        },
+        {
+            "title": "Engelska",
+            "description": "Flera års erfarenhet i att tala och förstå detta språk i både professionella och sociala sammanhang."
+        },
+        {
+            "title": "Franska",
+            "description": "Fem års skolfranska, lyssnar och tittar mycket på fransk film och musik."
+        },
+        {
+            "title": "Norska",
+            "description": "Pratat norska i kundtjänst."
+        }  
+    ]
+        
+}
+

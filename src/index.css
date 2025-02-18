@@ -1,0 +1,459 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+#modal h2 {
+  margin: 0;
+}
+
+#modal button {
+  margin-top: 20px;
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.about p, .home p {
+  padding: 0 1rem;
+}
+
+figcaption {
+  text-align: left;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  background-color: rgba(149, 0, 255, 0.541);
+}
+
+nav li {
+  flex: 1;
+  text-align: center;
+  background-color: rgb(247, 142, 142);
+  margin: 1rem;
+}
+
+nav li a {
+  display: block;
+  padding: 10px 20px;
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  box-shadow: 0px 0px 5px 5px;
+}
+
+.active {
+  background-color: rgb(246, 88, 148);
+}
+
+.toggle-input {
+  display: none;
+}
+
+main {
+  min-height: 95vh;
+  background-color:rgb(248, 162, 162);
+}
+
+main section h1 {
+  text-shadow: 0px 0px 3px white;
+}
+
+#about-image, #contact-image, #home-image, #cv-image, #portfolio-image {
+  background-size: contain;
+  background-position: center center;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-height: 45vh;
+}
+
+#about-image{
+  background-image: url(/src/pictures/bewilderedSimon.jpg);
+}
+
+#contact-image {
+  background-image: url(/src/pictures/surprisedSimon.jpg);
+}
+
+#home-image {
+  background-image: url(/src/pictures/confusedSimon.jpg);
+}
+
+#cv-image {
+  background-image: url(/src/pictures/fakesmileSimon.jpg);
+}
+
+#portfolio-image {
+  background-image: url(/src/pictures/outzonedSimon.jpg);
+}
+
+main .main section{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-height: 45vh;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  overflow-x: hidden;
+  transition: grid-template-columns 0.5s ease;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #ffffff5d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 10px;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.card img {
+  max-width: 100%; 
+  height: auto; 
+  object-fit: contain;
+}
+
+.card a {
+  color: black;
+}
+.card a:hover {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.projects-container .card #card-bottom {
+  display: flex;
+  gap: 0 4rem;
+  background-color: #ffffff00;
+  padding: 0;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  min-height: auto;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+  gap: 1em;
+}
+
+.modal a {
+  display: block;
+  margin-top: 10px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.modal a:hover {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Show modal when checkbox is checked */
+.modal-toggle:checked + .modal {
+  display: flex;
+}
+
+/* Close button */
+.close-btn {
+  display: block;
+  margin-top: 20px;
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* More Info button */
+.more-info-btn {
+  display: flex;
+  background-color: rgba(149, 0, 255, 0.541);
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.more-info-btn:hover {
+  box-shadow: 0px 0px 5px 5px;
+}
+
+.cv ul {
+  flex-direction: column;
+  list-style: none;
+}
+
+
+.cv ul li {
+  margin: 1em 0;
+}
+
+.cv section section {
+  text-align: left;
+  display: flex;
+  padding: 1rem;
+}
+
+.cv h2, .cv h3, .cv h4, .cv p {
+  text-align: left;
+  justify-content: left;
+}
+
+.cv h3, .cv h4, .cv p {
+  padding-left: 1rem;
+}
+
+.cv h2 {
+  border-bottom: 2px solid black;
+}
+
+footer {
+  background-color: rgba(149, 0, 255, 0.541);
+}
+
+footer p {
+  padding: 1rem;
+}
+
+footer span, footer a {
+  display: block;
+}
+
+footer a {
+  text-decoration: none;
+  color:rgb(58, 77, 74)
+}
+
+footer a:hover {
+  color: purple;
+}
+
+@media (max-width: 1000px) {
+  .projects-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Mobile page responsiveness */
+@media (max-width: 700px) {
+
+  header { 
+      align-items: center;
+      background-color: rgba(149, 0, 255, 0.541);
+
+  }
+
+  #about-image, #contact-image, #home-image, #cv-image, #portfolio-image {
+      background-size: cover;
+  }
+
+  nav ul {
+      display: none;
+      top: 4rem;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      transition: max-height 0.3s ease-out; 
+      max-height: 0;
+      overflow: hidden;
+  }
+
+  nav li {
+    margin: 0.2em 0;
+  }
+
+  li {
+      width: 100%;
+      margin: 0.2rem;
+  }
+
+  li a {
+      width: 100%;
+  }
+
+  .hamburger-icon {
+      display: block;
+      cursor: pointer;
+      margin: 1.6rem;
+  }
+
+  /* Style the bars inside the hamburger */
+  .hamburger-icon .bar {
+      width: 30px;
+      height: 4px;
+      margin: 5px 0;
+      text-align: center;
+      background-color: #333;
+  }
+
+  /* When the checkbox is checked, show the navigation */
+  .open {
+      display: flex;
+      max-height: 300px;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .open + .hamburger-icon .bar {
+      margin: 7px 0; 
+  }
+
+  .projects-container {
+      grid-template-columns: 1fr;
+      padding: 0;
+  }  
+}
+
+@media print {
+  #about-image, #contact-image, #home-image, #cv-image, #portfolio-image {
+      background: none !important;
+  }
+
+  body, main {
+      font-family: Arial, sans-serif; 
+      margin: 0;
+      padding: 0;
+  }
+
+  section {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      margin-bottom: 0.5em;
+      color: #000; 
+  }
+
+  p {
+      font-size: 12pt;
+      line-height: 1.5;
+      margin-bottom: 1em;
+  }
+
+  a {
+      text-decoration: none;
+      color: #000; 
+  }
+
+  nav, .no-print {
+      display: none !important;
+  }
+
+  article {
+      page-break-inside: avoid; 
+      margin-bottom: 1em;
+  }
+
+  article + article {
+      margin-top: 1em;
+  }
+
+  img {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .container {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
+
+  article:first-of-type {
+      page-break-before: always;
+  }
+
+  article:last-of-type {
+      page-break-after: always;
+  }
+
+  footer {
+      margin-top: 2em;
+      display: block; 
+  }
+}
