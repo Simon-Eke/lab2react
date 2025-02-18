@@ -4,7 +4,7 @@ export default function CV() {
     const [cvData, setCvData] = useState(null);
 
     useEffect(() => {
-        fetch('/data/cvData.json')
+        fetch('/lab2react/data/cvData.json')
         .then((response) => response.json())
         .then((data) => setCvData(data))
         .catch((error) => console.error('Error fetching CV data:', error));
