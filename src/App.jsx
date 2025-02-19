@@ -15,11 +15,11 @@ export default function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/cv" element={<CV />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/lab2react/" element={<Home />} />
+        <Route path="/lab2react/cv" element={<CV />} />
+        <Route path="/lab2react/portfolio" element={<Portfolio />} />
+        <Route path="/lab2react/contact" element={<Contact />} />
+        <Route path="/lab2react/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
